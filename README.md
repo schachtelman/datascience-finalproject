@@ -20,7 +20,6 @@ Maybe we also find some demographic data on alcohol consumption and attitudes to
 #### Questions
 
 * Which age groups prefer which alcoholic drinks?
-* 
 
 ### Student Alcohol Consumption
 
@@ -38,3 +37,18 @@ Get and idea of the taste profile of beer.
 
 1.5 Million beer reviews. A lot of info on taste profile. Breweries and name/style of beer are also given. Maybe we can expand it by location etc. Unfortunately only username given as info. We could also add gender, age, location of users (data is available on beeradvocate website).
 [Beer Advocate Reviews](https://data.world/socialmediadata/beeradvocate)
+
+##### Columns
+
+`review_time` is given as a UNIX timestamp
+`beer_abv` is alcohol by volume
+
+#### Questions
+* Which user did the most reviews?
+* Which user did the most positive reviews on average?
+* Which style of beer is the most liked one?
+* Which beer is the most liked one?
+* Which region produces the best beer (if we mange to get the region in our dataset)?
+* Which style of beer is most liked in Austria?
+* Which beer is the most disliked one?
+* How did the reviews change over the 10 year period of the dataset?
