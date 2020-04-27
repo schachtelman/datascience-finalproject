@@ -52,3 +52,5 @@ Get and idea of the taste profile of beer.
 * Which style of beer is most liked in Austria?
 * Which beer is the most disliked one?
 * How did the reviews change over the 10 year period of the dataset?
+* How do the ratings change with the alcohol content?
+
