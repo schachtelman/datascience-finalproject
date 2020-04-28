@@ -43,6 +43,8 @@ Get and idea of the taste profile of beer.
 `review_time` is given as a UNIX timestamp
 `beer_abv` is alcohol by volume
 
+Added country of breweries with the help of a scraper. 15 ids did not corresponds to an active brewery on the website ([1930, 5318, 1548, 3257, 1549, 10097, 1193, 5379, 9343, 18968, 10099, 1953, 3817, 27, 23980]). This is no problem, as we have a total of 5840 breweries.
+
 #### Questions
 * Which user did the most reviews?
 * Which user did the most positive reviews on average?
