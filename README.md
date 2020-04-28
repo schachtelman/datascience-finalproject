@@ -53,4 +53,6 @@ Get and idea of the taste profile of beer.
 * Which beer is the most disliked one?
 * How did the reviews change over the 10 year period of the dataset?
 * How do the ratings change with the alcohol content?
+* Which brewery produces the strongest beers?
+* Which brewery produces the best / worst beers?
 
