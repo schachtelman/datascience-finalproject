@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 beer_reviews.csv
+
+beer_reviews_countries.csv
