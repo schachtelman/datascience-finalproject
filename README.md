@@ -3,32 +3,6 @@ The final project for the Data Science course.
 
 The general topic is to find out something interesting about the alcohol consumption of humans. We will fix a more specific topic and hypothesis once we have an overview of available datasets.
 
-## Ideas
-
-### Gin Score Predictor (Genie)
-
-It would be nice to predict how well a certain mixture of gin-tonic (or drink in general) is received by a thirsty customer. This score could for example be used to build a basic recommender system as well. We could build a basic system were the user can select ingredients for his/her drink and his/her age, etc. and then predict how likely it is that the user likes the drink. 
-
-#### Dataset
-
-[Statista](https://de.statista.com/statistik/daten/studie/171629/umfrage/mindestens-einmal-im-monat-konsumierte-spirituosen/) seems to have quite a large selection of surveys on how people like to consume their alcohol (favorite brands, favorite drink, amount of cosumption, etc.). From this we could infer some simple score based on the brands and drinks used in the mixture.
-
-Maybe we also find some demographic data on alcohol consumption and attitudes towards certain drinks. Then we could include a score based on the age, gender, education status of the user as well. 
-
-[Beer, Liquor and Wine reviews](https://www.kaggle.com/datafiniti/wine-beer-and-liquor-reviews) 
-
-#### Questions
-
-* Which age groups prefer which alcoholic drinks?
-
-### Student Alcohol Consumption
-
-Answer questions about alcohol consumption of students. Nice and tidy dataset.
-
-#### Dataset
-
-[Kaggel Dataset](https://www.kaggle.com/uciml/student-alcohol-consumption)
-
 ### Beer Taste Profile
 
 Get and idea of the taste profile of beer.
@@ -40,23 +14,46 @@ Get and idea of the taste profile of beer.
 
 ##### Columns
 
+###### Original Columns
+`brewery_id` unique id of the brewery
+`brewery_name` name of the brewery
+`beer_beerid` unique id of the beer
+`beer_name` name of the beer
+`beer_style` style of the beer
+`review_profilename` profilename of the reviewer
 `review_time` is given as a UNIX timestamp
+`review_overall` float value between 1 and 5
+`review_aroma` float value between 1 and 5
+`review_appearance` float value between 1 and 5
+`review_palate` float value between 1 and 5
+`review_taste` float value between 1 and 5
 `beer_abv` is alcohol by volume
 
-Added country of breweries with the help of a scraper. 13 ids did not corresponds to an active brewery on the website ([1930, 5318, 1548, 3257, 1549, 10097, 5379, 9343, 18968, 10099, 1953, 3817, 23980]). This is no problem, as we have a total of 5840 breweries.
+As there were some information missing, we added some useful columns to the dataset. The added columns are country_plain, country_alpha_3, review_mean and review_count.
+To get information on the country of the breweries, we wrote a script and extracted this information from the website [Beer Advocate](http://www.beeradvocate.com/). Some of the breweries are already closed (1930: USA, 18968: USA, 1953: USA, 9343: USA, 10099: USA, 3817: NZL, 1549: USA, 10097: USA, 1548: USA, 5379: USA, 5318: USA, 3257: CA, 23980: USA) so we got the information from [Wikipedia](https://www.wikipedia.org/).
 
-1930: USA, 18968: USA, 1953: USA, 9343: USA, 10099: USA, 3817: NZL, 1549: USA, 10097: USA, 1548: USA, 5379: USA, 5318: USA, 3257: CA, 23980: USA
+###### Added Columns
+`country_plain`	country of the brewery
+`country_alpha_3`	country code of the brewery
+`review_mean`	mean value of all 5 indivitual review values
+`review_count` number of reviews for each beer
+
 
 #### Questions
-* Which user did the most reviews?
-* Which user did the most positive reviews on average?
-* Which style of beer is the most liked one?
-* Which beer is the most liked one?
-* Which region produces the best beer (if we mange to get the region in our dataset)?
-* Which style of beer is most liked in Austria?
-* Which beer is the most disliked one?
-* How did the reviews change over the 10 year period of the dataset?
-* How do the ratings change with the alcohol content?
-* Which brewery produces the strongest beers?
-* Which brewery produces the best / worst beers?
-
+* Q1: How do the different ratings and the alcohol content correlate?
+* Q2: What is the mean alcohol content overall?
+* Q3: How does the detailed distribution of the alcohol content look like?
+* Q4: Which countries produce the strongest/weakest beer?
+* Q5: What is the most common beer style?
+* Q6: How many different beer styles are there?
+* Q7: What are the best rated beer styles?
+* Q8: How do the beer styles differ in the individual ratings?
+* Q9: Which breweries (>500 ratings) produce the best beer?
+* Q10: What are the best breweries in each country?
+* Q11: What are the best beers overall?
+* Q12: How to the indivitual ratings change with the overall rating increasing?
+* Q13: What is the best beer in each country?
+* Q14: What is the best/worst famous (> 1000 ratings) beer?
+* Q15: Which countries produce the best beer?
+* Q16: What are the best/worst beers in Austria?
+* Q17: What are the most famous beer in Austria (by number of ratings)?
