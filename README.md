@@ -15,28 +15,28 @@ Get and idea of the taste profile of beer.
 ##### Columns
 
 ###### Original Columns
-`brewery_id` unique id of the brewery
-`brewery_name` name of the brewery
-`beer_beerid` unique id of the beer
-`beer_name` name of the beer
-`beer_style` style of the beer
-`review_profilename` profilename of the reviewer
-`review_time` is given as a UNIX timestamp
-`review_overall` float value between 1 and 5
-`review_aroma` float value between 1 and 5
-`review_appearance` float value between 1 and 5
-`review_palate` float value between 1 and 5
-`review_taste` float value between 1 and 5
-`beer_abv` is alcohol by volume
+* `brewery_id` unique id of the brewery
+* `brewery_name` name of the brewery
+* `beer_beerid` unique id of the beer
+* `beer_name` name of the beer
+* `beer_style` style of the beer
+* `review_profilename` profilename of the reviewer
+* `review_time` is given as a UNIX timestamp
+* `review_overall` float value between 1 and 5
+* `review_aroma` float value between 1 and 5
+* `review_appearance` float value between 1 and 5
+* `review_palate` float value between 1 and 5
+* `review_taste` float value between 1 and 5
+* `beer_abv` is alcohol by volume
 
 As there were some information missing, we added some useful columns to the dataset. The added columns are country_plain, country_alpha_3, review_mean and review_count.
 To get information on the country of the breweries, we wrote a script and extracted this information from the website [Beer Advocate](http://www.beeradvocate.com/). Some of the breweries are already closed (1930: USA, 18968: USA, 1953: USA, 9343: USA, 10099: USA, 3817: NZL, 1549: USA, 10097: USA, 1548: USA, 5379: USA, 5318: USA, 3257: CA, 23980: USA) so we got the information from [Wikipedia](https://www.wikipedia.org/).
 
 ###### Added Columns
-`country_plain`	country of the brewery
-`country_alpha_3`	country code of the brewery
-`review_mean`	mean value of all 5 indivitual review values
-`review_count` number of reviews for each beer
+* `country_plain`	country of the brewery
+* `country_alpha_3`	country code of the brewery
+* `review_mean`	mean value of all 5 indivitual review values
+* `review_count` number of reviews for each beer
 
 
 #### Questions
