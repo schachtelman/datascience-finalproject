@@ -38,6 +38,8 @@ To get information on the country of the breweries, we wrote a script and extrac
 * `review_mean`	mean value of all 5 indivitual review values
 * `review_count` number of reviews for each beer
 
+The whole dataset with the column we added can be downloaded [here](https://www.weizer-hopfen.com/owncloud/index.php/s/AmZ9VREA5znSxOf).
+
 
 #### Questions
 * Q1: How do the different ratings and the alcohol content correlate?
