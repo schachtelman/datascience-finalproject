@@ -57,3 +57,11 @@ To get information on the country of the breweries, we wrote a script and extrac
 * Q15: Which countries produce the best beer?
 * Q16: What are the best/worst beers in Austria?
 * Q17: What are the most famous beer in Austria (by number of ratings)?
+
+
+#### Machine Learning
+
+We tried different regression models for our dataset. The results are not that good but this is expected due to the high variance of the ratings. The best result was achieved by the Random Forest Regressor.
+
+As a bonus task, we also implemented the "Beer Machine". It is a self-invented beer recommender system that is based on the correlation between the ratings of individual beers. Similar ratings from similar users lead to high recommendation scores.
+In the small GUI, the "Beer Machine" can be tested.
