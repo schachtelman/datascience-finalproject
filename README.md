@@ -65,3 +65,5 @@ We tried different regression models for our dataset. The results are not that g
 
 As a bonus task, we also implemented the "Beer Machine". It is a self-invented beer recommender system that is based on the correlation between the ratings of individual beers. Similar ratings from similar users lead to high recommendation scores.
 In the small GUI, the "Beer Machine" can be tested.
+
+![beer2](figs/beer2.gif)![beer1](figs/beer1.gif)
